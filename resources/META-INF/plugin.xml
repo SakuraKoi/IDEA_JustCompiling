@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>cyou.sakurakooi.justcompiling</id>
+  <name>ImJustCompiling</name>
+  <version>1.0</version>
+  <vendor email="support@sakurakooi.cyou" url="https://www.sakurakooi.cyou">SakuraKooi</vendor>
+
+  <description><![CDATA[
+      Show a "compiling" dialog while you're working.<br/>
+      Then enjoy a logical break and be relax :)
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Nothing happened except great life:)
+    ]]>
+  </change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="cyou.sakurakooi.JustCompiling.ActionShowCompiling"
+            class="cyou.sakurakooi.JustCompiling.ActionShowCompiling" text="Take a Break"
+            description="Let my IDE compiling nothing">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
